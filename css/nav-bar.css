@@ -1,0 +1,50 @@
+@keyframes showNavBar {
+  from {
+    transform: translateY(30px);
+  }
+  to {
+    transform: none;
+  }
+}
+.nav {
+  /*background-color: red;*/
+
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  padding: 20px 50px;
+  /*color: #fcfcfc;*/
+  border-top: 1px solid #f7f7f7;
+  animation: showNavBar 0.5s ease-out forwards;
+  animation-delay: 0.5s;
+  transform: translateY(80px);
+}
+
+.nav .nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav i {
+  font-size: 20px;
+}
+
+.nav .nav__list-link {
+  position: relative;
+}
+.nav .nav__badge {
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  color: white;
+  font-size: 10px;
+  background-color: #dc5d46;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
